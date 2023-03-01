@@ -3,56 +3,56 @@ import itertools
 from itertools import permutations
 
 attempts = [
-319,
-680,
-180,
-690,
-129,
-620,
-762,
-689,
-762,
-318,
-368,
-710,
-720,
-710,
-629,
-168,
-160,
-689,
-716,
-731,
-736,
-729,
-316,
-729,
-729,
-710,
-769,
-290,
-719,
-680,
-318,
-389,
-162,
-289,
-162,
-718,
-729,
-319,
-790,
-680,
-890,
-362,
-319,
-760,
-316,
-729,
-380,
-319,
-728,
-716,
+  319,
+  680,
+  180,
+  690,
+  129,
+  620,
+  762,
+  689,
+  762,
+  318,
+  368,
+  710,
+  720,
+  710,
+  629,
+  168,
+  160,
+  689,
+  716,
+  731,
+  736,
+  729,
+  316,
+  729,
+  729,
+  710,
+  769,
+  290,
+  719,
+  680,
+  318,
+  389,
+  162,
+  289,
+  162,
+  718,
+  729,
+  319,
+  790,
+  680,
+  890,
+  362,
+  319,
+  760,
+  316,
+  729,
+  380,
+  319,
+  728,
+  716,
 ]
 
 #compiling digits
@@ -82,16 +82,16 @@ def deriv(list, num):
   num2 = list[1]
   num3 = list[2]
 
-
   number = [int(i) for i in str(num)]
 
-  if number.index(num2) < number.index(num1) or number.index(num3) < number.index(num2):
+  if number.index(num2) < number.index(num1) or number.index(
+      num3) < number.index(num2):
     return False
   else:
     return True
-  
-#print(deriv([3, 1, 9], 30109))
 
+
+#print(deriv([3, 1, 9], 30109))
 
 perms = list((itertools.permutations("12367890")))
 print(perms[0])
